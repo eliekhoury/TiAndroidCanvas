@@ -12,7 +12,7 @@ copyright: Copyright (c) 2013 by WorldWise Learning
 
 # these should not be edited
 name: canvas
-moduleid: com.wwl.canvas
+moduleid: com.woopra.android.canvas
 guid: 16bed9a8-b9fa-4ce2-9e22-675bd4e93699
 platform: android
 minsdk: 1.8.2
