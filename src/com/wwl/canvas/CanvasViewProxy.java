@@ -166,6 +166,7 @@ public class CanvasViewProxy extends TiViewProxy {
 	@Kroll.method
 	void clear() {
 		Paint tmpPaint = new Paint();
+		tmpPaint.setFlags(Paint.ANTI_ALIAS_FLAG);
 		tmpPaint.setXfermode(new PorterDuffXfermode(Mode.CLEAR));
 		view.cView.currentCanvas.drawPaint(tmpPaint);
 		view.drawShape();
@@ -175,6 +176,7 @@ public class CanvasViewProxy extends TiViewProxy {
 	void clearRect(int x, int y, int width, int height) {
 
 		Paint tmpPaint = new Paint();
+		tmpPaint.setFlags(Paint.ANTI_ALIAS_FLAG);
 		tmpPaint.setXfermode(new PorterDuffXfermode(Mode.CLEAR));
 		tmpPaint.setStyle(Paint.Style.FILL);
 		view.cView.currentCanvas.drawRect(x, y, x + width, y + height, tmpPaint);
